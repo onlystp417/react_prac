@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: beige;
+  padding: 10px 30px;
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  display: block;
+  width: 100%;
+  color: rgb(50, 50, 50);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
