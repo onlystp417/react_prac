@@ -26,4 +26,19 @@ input {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 0 20px; /* 確保直向沒有 gap，才不會影響計算公式 */
+  grid-auto-rows: 1px;
+  padding-bottom: 50px;
+  height: 100%;
+}
+
+.image-list img {
+  width: 100%;
+  grid-row-end: span 2; /* 只是預設值，當渲染在畫面上之後馬上就會被 js 的樣式蓋掉 */
 }

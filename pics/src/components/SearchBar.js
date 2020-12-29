@@ -6,7 +6,8 @@ export default class SearchBar extends React.Component {
   onFormSubmit = event => {
     event.preventDefault();
 
-    console.log(this.state.term);
+    // 觸發父層的自定義事件，就像 Vue emit 的做法
+    this.props.onSubmit(this.state.term);
   }
 
   render() {
